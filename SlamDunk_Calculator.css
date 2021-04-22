@@ -1,0 +1,89 @@
+    html,
+    body {
+        font-family: sans-serif;
+        font-size: 24px;
+        text-align: center;
+        background: url(_img/SlamDunkwallpaper.jpg);
+        background-size: cover;
+        margin: 0;
+        height: 100%;
+    }
+    
+    div {
+        width: 465px;
+        margin: auto;
+    }
+    
+    table {
+        border-radius: 5%;
+        padding: 30px;
+        width: 465px;
+        height: 540px;
+        border-spacing: 10px;
+        table-layout: fixed;
+    }
+    
+    td.showscreen {
+        border-radius: 5%;
+        background-color: yellow;
+        max-width: 300px;
+        height: 200px;
+    }
+    
+    td.nbbtn {
+        border-radius: 5%;
+        background-color: lightyellow;
+        border: 2px solid lightslategrey;
+        opacity: 0.9;
+    }
+    
+    td:hover:not(.showscreen) {
+        background-color: rgb(89, 139, 170);
+        cursor: pointer;
+    }
+    
+    h2 {
+        font-size: 50px;
+        padding-right: 20px;
+        text-align: right;
+    }
+    
+    div#doaho {
+        position: fixed;
+        text-align: left;
+        width: 100%;
+    }
+    
+    img#tensai {
+        height: 100px;
+        position: relative;
+        animation: mymoves 10s infinite;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes mymoves {
+        0% {
+            /* 起點 */
+            transform: translate(-150px, 0);
+        }
+        25% {
+            /* 終點 */
+            transform: translate(100vw, 0);
+        }
+        50% {
+            /* 轉身 from W3school*/
+            transform: translate(100vw, 0) scaleX(-1);
+        }
+        75% {
+            /* 起點 */
+            transform: translate(-150px, 0) scaleX(-1);
+        }
+        100% {
+            /* 轉回 */
+            transform: translate(-150px, 0);
+        }
+    }
+    
+    div#michi {
+        height: 20px;
+    }

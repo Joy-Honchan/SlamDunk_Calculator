@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slam Dunk Calculator</title>
+    <link rel="stylesheet" href="SlamDunk_Calculator.css">
+    <script src="SlamDunk_Calculator.js"></script>
+</head>
+
+<body>
+    <div id="doaho"><img id='tensai' src="" alt=""></div>
+    <div>
+
+        <table class="center">
+            <tr>
+                <td class="showscreen" colspan="4">
+                    <h6 id="pre">試著算出1031</h6>
+                    <h2 id="result"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td type='button' onclick="byeall()" class="nbbtn" colspan="2">AC</td>
+                <td type='button' onclick="byebye()" class="nbbtn">C</td>
+                <td type='button' onclick="getcal('+')" class="nbbtn">+</td>
+            </tr>
+
+            <tr>
+                <td type='button' onclick="getvalue(7)" class="nbbtn">7</td>
+                <td type='button' onclick="getvalue(8)" class="nbbtn">8</td>
+                <td type='button' onclick="getvalue(9)" class="nbbtn">9</td>
+                <td type='button' onclick="getcal('-')" class="nbbtn">-</td>
+            </tr>
+            <tr>
+                <td type='button' onclick="getvalue(4)" class="nbbtn">4</td>
+                <td type='button' onclick="getvalue(5)" class="nbbtn">5</td>
+                <td type='button' onclick="getvalue(6)" class="nbbtn">6</td>
+                <td type='button' onclick="getcal('*')" class="nbbtn">*</td>
+            </tr>
+            <tr>
+                <td type='button' onclick="getvalue(1)" class="nbbtn">1</td>
+                <td type='button' onclick="getvalue(2)" class="nbbtn">2</td>
+                <td type='button' onclick="getvalue(3)" class="nbbtn">3</td>
+                <td type='button' onclick="getcal('/')" class="nbbtn">/</td>
+            </tr>
+            <tr>
+                <td type='button' onclick="getvalue(0)" class="nbbtn" colspan="2">0</td>
+                <td type='button' onclick="getequal()" class="nbbtn" colspan="2">=</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function easteregg() {
+            document.getElementById('tensai').src = '_img/Running Hanamichi.gif';
+        }
+    </script>
+</body>
+
+</html>
